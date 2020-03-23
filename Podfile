@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'TrackPlayerSwiftReact' do
@@ -36,16 +36,20 @@ target 'TrackPlayerSwiftReact' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire'
   pod 'SDWebImage', '~> 5.0'
-  pod 'RealmSwift'
+  pod 'RealmSwift', '~> 3.17', :modular_headers => true
+  pod 'Realm', '~> 3.17', :modular_headers => true
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'SwiftAudio', '~> 0.11.1'
+  
 
   target 'TrackPlayerSwiftReactTests' do
     inherit! :search_paths
     pod 'SwiftyJSON', '~> 4.0'
     pod 'Alamofire'
     pod 'SDWebImage', '~> 5.0'
-    pod 'RealmSwift'
+    pod 'RealmSwift', '~> 3.17', :modular_headers => true
+    pod 'Realm', '~> 3.17', :modular_headers => true
     pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
     # Pods for testing

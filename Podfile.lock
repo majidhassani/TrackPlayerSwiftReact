@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.0.4)
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.61.5)
@@ -217,9 +218,26 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
     - ReactCommon/jscallinvoker (= 0.61.5)
+  - Realm (3.21.0):
+    - Realm/Headers (= 3.21.0)
+  - Realm/Headers (3.21.0)
+  - RealmSwift (3.21.0):
+    - Realm (= 3.21.0)
+  - RxCocoa (5.1.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
+  - SDWebImage (5.6.1):
+    - SDWebImage/Core (= 5.6.1)
+  - SDWebImage/Core (5.6.1)
+  - SwiftAudio (0.11.2)
+  - SwiftyJSON (4.3.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
+  - Alamofire
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
@@ -247,11 +265,27 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - Realm (~> 3.17)
+  - RealmSwift (~> 3.17)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SDWebImage (~> 5.0)
+  - SwiftAudio (~> 0.11.1)
+  - SwiftyJSON (~> 4.0)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - boost-for-react-native
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SwiftAudio
+    - SwiftyJSON
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -306,6 +340,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  Alamofire: 0fe5fd24b4298dc377a6550da7d5f1b30e286fcb
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   FBLazyVector: aaeaf388755e4f29cd74acbc9e3b8da6d807c37f
@@ -331,8 +366,16 @@ SPEC CHECKSUMS:
   React-RCTText: 9ccc88273e9a3aacff5094d2175a605efa854dbe
   React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
+  Realm: 38e9dcb19104b58407167d99f70d4995f7c16023
+  RealmSwift: 3183cc1ad48378fbcd634311b22c0e6c44021152
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
+  SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
+  SwiftAudio: 217f5f184b27a0e25ff0fe7647021f05a21c06c9
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
-PODFILE CHECKSUM: 6c7c26e5cb29d31ca421ca8005cad2ff6007c496
+PODFILE CHECKSUM: b8352ac01be9de9230353279d53ec334f4359d56
 
-COCOAPODS: 1.9.0.beta.3
+COCOAPODS: 1.9.1

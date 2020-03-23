@@ -16,6 +16,11 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* TrackPlayerSwiftReactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TrackPlayerSwiftReactTests.m */; };
+		301BA12D2428D61A0039B1AC /* SessionCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301BA1282428D6130039B1AC /* SessionCategories.swift */; };
+		301BA12E2428D61A0039B1AC /* MediaURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301BA1292428D6140039B1AC /* MediaURL.swift */; };
+		301BA12F2428D61A0039B1AC /* PitchAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301BA12A2428D6170039B1AC /* PitchAlgorithms.swift */; };
+		301BA1302428D61A0039B1AC /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301BA12B2428D6180039B1AC /* Track.swift */; };
+		301BA1312428D61A0039B1AC /* Capabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301BA12C2428D6190039B1AC /* Capabilities.swift */; };
 		303F64F32416519800B85C0A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F64F22416519800B85C0A /* BaseViewModel.swift */; };
 		303F64F5241652CA00B85C0A /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 303F64F4241652CA00B85C0A /* BaseViewModel.m */; };
 		8DFA1ECC00BFEF4E67A88C1A /* libPods-TrackPlayerSwiftReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CDBD5990CDBF68DE77A059 /* libPods-TrackPlayerSwiftReact.a */; };
@@ -57,6 +62,11 @@
 		2AA6BCDEAF4A49425C32349D /* Pods-TrackPlayerSwiftReactTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackPlayerSwiftReactTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackPlayerSwiftReactTests/Pods-TrackPlayerSwiftReactTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* TrackPlayerSwiftReact-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrackPlayerSwiftReact-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* TrackPlayerSwiftReact-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TrackPlayerSwiftReact-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		301BA1282428D6130039B1AC /* SessionCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionCategories.swift; sourceTree = "<group>"; };
+		301BA1292428D6140039B1AC /* MediaURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaURL.swift; sourceTree = "<group>"; };
+		301BA12A2428D6170039B1AC /* PitchAlgorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchAlgorithms.swift; sourceTree = "<group>"; };
+		301BA12B2428D6180039B1AC /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		301BA12C2428D6190039B1AC /* Capabilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capabilities.swift; sourceTree = "<group>"; };
 		303F64F12416519800B85C0A /* TrackPlayerSwiftReact-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrackPlayerSwiftReact-Bridging-Header.h"; sourceTree = "<group>"; };
 		303F64F22416519800B85C0A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		303F64F4241652CA00B85C0A /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
@@ -161,6 +171,11 @@
 		303F64EE2416516C00B85C0A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				301BA12C2428D6190039B1AC /* Capabilities.swift */,
+				301BA1292428D6140039B1AC /* MediaURL.swift */,
+				301BA12A2428D6170039B1AC /* PitchAlgorithms.swift */,
+				301BA1282428D6130039B1AC /* SessionCategories.swift */,
+				301BA12B2428D6180039B1AC /* Track.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -321,6 +336,7 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1130;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
@@ -565,7 +581,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				301BA12D2428D61A0039B1AC /* SessionCategories.swift in Sources */,
+				301BA12E2428D61A0039B1AC /* MediaURL.swift in Sources */,
+				301BA1302428D61A0039B1AC /* Track.swift in Sources */,
+				301BA12F2428D61A0039B1AC /* PitchAlgorithms.swift in Sources */,
 				303F64F5241652CA00B85C0A /* BaseViewModel.m in Sources */,
+				301BA1312428D61A0039B1AC /* Capabilities.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				303F64F32416519800B85C0A /* BaseViewModel.swift in Sources */,
 			);
@@ -622,6 +643,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -636,6 +658,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrackPlayerSwiftReactTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackPlayerSwiftReact.app/TrackPlayerSwiftReact";
 			};
 			name = Debug;
@@ -646,6 +671,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = TrackPlayerSwiftReactTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -657,6 +683,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrackPlayerSwiftReactTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackPlayerSwiftReact.app/TrackPlayerSwiftReact";
 			};
 			name = Release;
@@ -713,7 +741,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3815693E7B09EC3E09F57A19 /* Pods-TrackPlayerSwiftReact-tvOS.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -734,7 +761,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -742,7 +769,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3221B40296002152C67E54D2 /* Pods-TrackPlayerSwiftReact-tvOS.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -763,7 +789,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -868,7 +894,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -916,7 +942,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "TrackPlayerSwiftReact-Bridging-Header.h";
@@ -934,7 +960,7 @@
 				00E356F71AD99517003FC87E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TrackPlayerSwiftReact" */ = {
 			isa = XCConfigurationList;
@@ -943,7 +969,7 @@
 				13B07F951A680F5B00A75B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "TrackPlayerSwiftReact-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -952,7 +978,7 @@
 				2D02E4981E0B4A5E006451C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "TrackPlayerSwiftReact-tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -961,7 +987,7 @@
 				2D02E49A1E0B4A5E006451C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TrackPlayerSwiftReact" */ = {
 			isa = XCConfigurationList;
@@ -970,7 +996,7 @@
 				83CBBA211A601CBA00E9B192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
