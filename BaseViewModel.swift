@@ -123,7 +123,7 @@ class BaseViewModel:RCTEventEmitter{
           "playback-state",
           "playback-error",
           "playback-track-changed",
-          
+          "onIncrement",
           "remote-stop",
           "remote-pause",
           "remote-play",
